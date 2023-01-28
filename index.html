@@ -20,30 +20,40 @@
   <title>Challenge du Tourmagne</title>
 </head>
 
-<body>
-  <header class="container-fluid sticky-top">
-    <div class="container-lg">
-      <div id="logo" class="text-center">
-        <img src="./images/logo.jpg" alt="logo Challenge Tourmagne" width="480" height="480">
+<body class="d-flex flex-column">
+  <div class="flex-grow-1">
+    <header class="container-fluid">
+      <div class="container-lg">
+        <div id="logo" class="text-center">
+          <img src="./images/logo.jpg" alt="logo Challenge Tourmagne" width="480" height="480">
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <section id="intro" class="container-fluid py-4 text-center">
-    <div class="container-lg">
-      <h1>Le challenge arrive bientôt !</h1>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui natus maiores assumenda hic. Illo debitis iure aspernatur, maxime modi incidunt. Sequi accusamus laborum earum unde fugiat, atque cupiditate voluptatibus cum quam suscipit ab veritatis cumque optio dolorem possimus mollitia corporis aut quas aliquam consequatur eum quisquam. Officiis repellendus reiciendis animi necessitatibus libero enim, maxime blanditiis deleniti quos commodi tempora dolorum nam quod quo voluptatibus quisquam, labore illo! Officiis voluptatem quaerat aliquam est necessitatibus enim, quasi, blanditiis debitis sit voluptates temporibus.</p>
-    </div>
-  </section>
+    <section id="intro" class="container-fluid py-4 text-center bg-blue">
+      <div class="container-lg max-width">
+        <h1>Le challenge arrive bientôt !</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui natus maiores assumenda hic. Illo debitis iure aspernatur, maxime modi incidunt. Sequi accusamus laborum earum unde fugiat, atque cupiditate voluptatibus cum quam suscipit ab veritatis cumque optio dolorem possimus mollitia corporis aut quas aliquam consequatur eum quisquam. Officiis repellendus reiciendis animi necessitatibus libero enim.</p>
+      </div>
+    </section>
 
-  <section id="countdown" class="container-fluid text-center">
-    <div class="py-4">
-      <p id="timeleft" class="text-center"></p>
-    </div>
-  </section>
+    <section id="countdown" class="container-fluid text-center py-4 bg-blue">
+      <div>
+        <p id="timeleft" class="m-auto"></p>
+      </div>
+    </section>
 
-  <footer class="container-fluid fixed-bottom text-center">
-    <div class="container-lg p-3">
+    <section class="text-center py-4 max-width m-auto">
+      <h2>Présentation en vidéo</h2>
+      <div class="responsive-iframe">
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/aZwFvkn5Tu4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+
+    </section>
+  </div>
+
+  <footer class="container-fluid text-center py-2">
+    <div class="container-lg p-2">
         <a href="https://www.instagram.com/challengetourmagne/" class="p-2" target="_blank">
           <i class="fa-brands fa-instagram fa-2xl" aria-label="Link to our Instagram profile" role="link"></i>
         </a>
@@ -51,7 +61,7 @@
           <i class="fa-brands fa-facebook fa-2xl" aria-label="Link to our Facebook account" role="link"></i>
         </a>
     </div>
-    <address class="container-lg mt-2">
+    <address class="container-lg my-0">
       Association Challenge du Tourmagne<br>
       C/O S.A. ZÉFAL<br>
       ZI Les Cailloux<br>

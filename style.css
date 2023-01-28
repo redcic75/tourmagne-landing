@@ -13,16 +13,13 @@
   box-sizing: border-box;
 }
 
-/* || GENERAL STYLES */
-/* html {
-  max-width: 768px;
-  margin-left: auto;
-  margin-right: auto;
-} */
+/* || HTML elements */
+html {
+  height: 100%;
+}
 
 body {
-  margin: auto;
-  padding-bottom: 176px;
+  height: 100%;
 }
 
 header {
@@ -34,38 +31,19 @@ footer {
   color: var(--light);
 }
 
-#intro {
-  background-color: var(--lightblue);
-}
-
-#countdown p {
-  border: solid var(--red) 3px;
-  font-size: 1.2rem;
-  font-weight: bolder;
-  color: var(--red);
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1rem;
-  border-radius: 6px;
-}
-
-h1 {
+h1, h2 {
+  margin:.5rem;
+  padding: 0;
   color: var(--blue);
-}
-
-/* img {
-  width: 100%;
-  height: auto;
-} */
-
-a {
-  text-decoration: none;
-  color: inherit;
 }
 
 p {
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 a:hover {
@@ -74,8 +52,48 @@ a:hover {
   color: inherit;
 }
 
+/* || Classes and Ids*/
+.bg-blue {
+  background-color: var(--lightblue);
+}
+
+.responsive-iframe {
+	max-width: 100%;
+	width: 100%;
+  padding-bottom: 56.25%; /* For 16/9 video */
+	position: relative;
+  overflow: hidden;
+}
+
+.responsive-iframe iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.max-width {
+  max-width: 768px;
+}
+
+.m-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#timeleft {
+  border: solid var(--red) 3px;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: var(--red);
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
 #logo img {
-  width: 160px;
+  width: 140px;
   max-width: 100%;
   height: 100%;
 }

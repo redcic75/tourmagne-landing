@@ -18,7 +18,7 @@ function timeLeft() {
   }
 
   // Display the result in the element with id="timeleft"
-  document.getElementById("timeleft").innerHTML = `${days} ${dayString} ${hours} h ${minutes} m ${seconds} s`;
+  document.getElementById("timeleft").innerHTML = `${days} ${dayString} ${hours} h ${minutes} min ${seconds} s`;
 
   // If the count down is finished, write some text
   if (timeleft < 0) {

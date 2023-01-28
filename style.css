@@ -52,6 +52,11 @@ a:hover {
   color: inherit;
 }
 
+
+button {
+  background-color: var(--blue) !important;
+}
+
 /* || Classes and Ids*/
 .bg-blue {
   background-color: var(--lightblue);
@@ -75,6 +80,10 @@ a:hover {
 
 .max-width {
   max-width: 768px;
+}
+
+.max-width-sm {
+  max-width: 400px;
 }
 
 .m-auto {

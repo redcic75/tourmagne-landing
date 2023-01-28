@@ -1,0 +1,92 @@
+/* || CONFIGURATION */
+:root {
+  --light: white;
+  --dark: #313231;
+  --red: #e3022c;
+  --blue: #233677;
+  --lightblue: #e6e8f2;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* || GENERAL STYLES */
+body {
+  margin: auto;
+  min-height: 100vh;
+  padding-bottom: 100px;
+}
+
+header {
+  background-color: white;
+}
+
+footer {
+  background-color: var(--blue);
+  color: var(--light);
+}
+
+#intro {
+  background-color: var(--lightblue);
+}
+
+#countdown p {
+  border: solid var(--red) 3px;
+  font-size: 2rem;
+  font-weight: bolder;
+  color: var(--red);
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+h1 {
+  color: var(--blue);
+}
+
+li {
+  list-style: none;
+}
+
+/* img {
+  width: 100%;
+  height: auto;
+} */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+a:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  color: inherit;
+}
+
+#logo img {
+  width: 200px;
+  height: 100%;
+}
+
+#compteur {
+  color: var(--red);
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  #logo img {
+    width: 480px;
+    height: 100%;
+  }
+}

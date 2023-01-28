@@ -2,8 +2,7 @@
 let dday = new Date("May 1, 2023 00:00:00").getTime();
 // let dday = new Date("Jan 30, 2023 08:00:00").getTime();
 
-// Update the count down every 1 second
-const interval = setInterval(function() {
+function timeLeft() {
   const now = new Date().getTime();
   const timeleft = dday - now;
 
@@ -18,12 +17,17 @@ const interval = setInterval(function() {
     dayString += "s";
   }
 
-  // Display the result in the element with id="demo"
+  // Display the result in the element with id="timeleft"
   document.getElementById("timeleft").innerHTML = `${days} ${dayString} ${hours} h ${minutes} m ${seconds} s`;
 
   // If the count down is finished, write some text
   if (timeleft < 0) {
     clearInterval(interval);
-    document.getElementById("timeleft").innerHTML = "CHALLENGE STARTED";
+    document.getElementById("timeleft").innerHTML = "LE CHALLENGE A COMMENCÉ";
   }
-}, 1000);
+}
+
+timeLeft();
+
+// Update the count down every 1 second
+const interval = setInterval(timeLeft, 1000);

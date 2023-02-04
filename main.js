@@ -1,5 +1,5 @@
 // Set the date we're counting down to
-let dday = new Date("May 1, 2023 00:00:00").getTime();
+let dday = new Date("Apr 24, 2023 00:00:00").getTime();
 // let dday = new Date("Jan 30, 2023 08:00:00").getTime();
 
 function timeLeft() {
